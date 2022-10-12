@@ -8,8 +8,12 @@ cp Projects/system_setup/.inputrc .inputrc
 sed -i '1 i\source .bash_profile' .bashrc
 source .bashrc
 
+cd ~
+mkdir ~/.config
+mkdir ~/.config/nvim
+cp ~/Projects/system_setup/init.vim ~/.config/nvim/.
+sudo apt-get install neovim
 sudo ubuntu-drivers autoinstall
-
 sudo apt-get install npm
 sudo snap install nvm
 sudo apt-get install curl
