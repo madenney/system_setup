@@ -8,3 +8,6 @@ sudo apt-get install libgtk-3-dev
 sudo apt-get install x11proto-xinerama-dev 
 sudo apt-get install libusb-dev
 sudo apt-get install libusb-1.0-0-dev
+
+# Must do these or else dolphin won't dump frames
+sudo apt-get install libavcodec-dev libavformat-dev libavfilter-dev

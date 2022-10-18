@@ -1,10 +1,11 @@
 mkdir Projects
 cd Projects
+sudo apt-get install git
 git clone https://github.com/madenney/system_setup
 
 cd ~
 cp ~/Projects/system_setup/bash_profile .bash_profile
-cp Projects/system_setup/.inputrc .inputrc
+cp Projects/system_setup/inputrc .inputrc
 sed -i '1 i\source .bash_profile' .bashrc
 source .bashrc
 
@@ -13,10 +14,14 @@ mkdir ~/.config
 mkdir ~/.config/nvim
 cp ~/Projects/system_setup/init.vim ~/.config/nvim/.
 sudo apt-get install neovim
+
 sudo ubuntu-drivers autoinstall
 sudo apt-get install npm
 sudo snap install nvm
 sudo apt-get install curl
+sudo apt-get install ffmpeg
+sudo apt-get install mpv
+sudo apt-get install spotify
 
 mkdir ~/Projects/sandbox
 cd ~/Projects/sandbox

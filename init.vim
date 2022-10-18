@@ -28,8 +28,6 @@ filetype plugin on
 let g:vimwiki_list = [{'path':'~/Documents/vimwiki', 'path_html':'~/Documents/vimwiki/html'}]
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
@@ -37,12 +35,7 @@ call plug#end()
 
 colorscheme gruvbox
 
-" require plugin configs
-lua require('telescope')
-
 let mapleader =  " "
-nnoremap <leader>f <cmd>Telescope find_files<cr>
-nnoremap <leader>as <cmd>Telescope live_grep<cr>
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 let g:NERDTreeWinSize=20
