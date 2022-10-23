@@ -14,6 +14,12 @@ cp Projects/system_setup/inputrc .inputrc
 sed -i '1 i\source .bash_profile' .bashrc
 source .bashrc
 
+# Install necessary tools
+echo "Installing useful tools"
+sudo apt-get install npm
+sudo apt-get install nvm
+sudo apt-get install curl
+
 # Setup neovim
 echo "Setting up neovim"
 cd ~
@@ -21,10 +27,8 @@ mkdir ~/.config
 mkdir ~/.config/nvim
 cp ~/Projects/system_setup/init.vim ~/.config/nvim/.
 sudo apt-get install neovim
+# Vim Plugin Manager:
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# Have to manually install plugins within nvim with 'PlugInstall' command
 
-
-# Install necessary tools
-echo "Installing useful tools"
-sudo apt-get install npm
-sudo apt-get install nvm
-sudo apt-get install curl
