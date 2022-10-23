@@ -4,6 +4,7 @@
 cd ~
 mkdir Projects
 cd Projects
+sudo apt-get install git
 git clone https://github.com/madenney/system_setup
 
 echo "Running terminal_setup..."
