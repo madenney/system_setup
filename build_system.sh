@@ -1,40 +1,20 @@
+# The only pre-req is git
+
+# Get system_setup
+cd ~
 mkdir Projects
 cd Projects
 git clone https://github.com/madenney/system_setup
 
+echo "Running terminal_setup..."
 cd ~
-cp ~/Projects/system_setup/bash_profile .bash_profile
-cp Projects/system_setup/.inputrc .inputrc
-sed -i '1 i\source .bash_profile' .bashrc
-source .bashrc
+./Projects/system_setup/terminal_setup.sh
 
+echo "Running Ubuntu setup..."
 cd ~
-mkdir ~/.config
-mkdir ~/.config/nvim
-cp ~/Projects/system_setup/init.vim ~/.config/nvim/.
-sudo apt-get install neovim
-sudo ubuntu-drivers autoinstall
-sudo apt-get install npm
-sudo snap install nvm
-sudo apt-get install curl
+./Projects/system_setup/ubuntu_setup.sh
 
-mkdir ~/Projects/sandbox
-cd ~/Projects/sandbox
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+echo "Running slp setup..."
 cd ~
-source .bashrc
+./Projects/system_setup/slp_setup
 
-cd ~/Projects
-git clone https://github.com/madenney/Archiver
-git clone https://github.com/project-slippi/Ishiiruka
-
-cd ~/Projects/Archiver
-nvm install 18
-npm i
-
-cd ~/Projects/system_setup
-chmod +x ./install_Ishiiruka_reqs.sh
-./build_Ishiiruka.sh
-cd ~/Projects/Ishiruuka
-git checkout 0dcbe64765d67d3bd24133237c18e76e30bf3914
-./build-linux playback
