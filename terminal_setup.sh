@@ -19,6 +19,7 @@ echo "Installing useful tools"
 sudo apt-get install npm
 sudo apt-get install nvm
 sudo apt-get install curl
+sudo apt-get install htop
 
 # Setup neovim
 echo "Setting up neovim"
