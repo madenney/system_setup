@@ -17,5 +17,5 @@ cd ~
 
 echo "Running slp setup..."
 cd ~
-./Projects/system_setup/slp_setup
+./Projects/system_setup/slp_setup.sh
 
