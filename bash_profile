@@ -31,3 +31,6 @@ alias nos='~/Tools/nosqlbooster4mongo-8.0.11.AppImage'
 alias mong='sudo systemctl restart mongod'
 alias mc='watch -t -n 0.0001 xdotool getmouselocation'
 alias list_audio_devices="LANG=C pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d' ' -f2"
+alias pf='printf "file '\''%s'\''\\n" * > file.txt'
+alias cc='ffmpeg -f concat -i file.txt -c:v copy -b:v 15000k -af aresample=async=1:first_pts=0 -c:a aac -b:a 128k -fflags +genpts final.avi'
+
