@@ -17,6 +17,7 @@ alias eb="nvim ~/.bash_profile"
 alias ev="nvim ~/.config/nvim/init.vim"
 alias o="xdg-open ."
 alias m="~/Files/melee/slippi.AppImage"
+alias g="xclip -selection clipboard < ~/.pem/git_token"
 alias sb="ssh -i ~/.pem/sandbox.pem root@192.81.132.158"
 alias vb="virtualbox"
 alias vm='VBoxManage startvm "Windows 10"'
