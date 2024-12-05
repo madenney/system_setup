@@ -8,8 +8,8 @@ declare -A SHORTCUTS=(
     # Format: ["name"]="command|keybinding"
     ["Open Terminal"]="gnome-terminal|<Super>T"
     ["Open Melee"]="/home/$USER/Files/melee/slippi.AppImage|<Super>M"
-    ["Mirror TV Screen"]="/home/$USER/myscript.sh|<Super>S"
-    ["Revert Displays"]="/home/$USER/myscript.sh|<Super>S"
+    ["Mirror TV Screen"]="/home/$USER/Projects/system_setup/activate_mirror.sh|<Super>B"
+    ["Revert Displays"]="/home/$USER/Projects/system_setup/revert_displays.sh|<Super>V"
 )
 
 echo "Creating custom shortcuts..."

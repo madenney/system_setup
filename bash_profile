@@ -18,6 +18,7 @@ alias ev="nvim ~/.config/nvim/init.vim"
 alias o="xdg-open ."
 alias m="~/Files/melee/slippi.AppImage"
 alias g="xclip -selection clipboard < ~/.pem/git_token"
+alias db="~/Tools/DbVisualizer/dbvis"
 alias sb="ssh -i ~/.pem/sandbox.pem root@192.81.132.158"
 alias vb="virtualbox"
 alias vm='VBoxManage startvm "Windows 10"'
@@ -35,3 +36,24 @@ alias list_audio_devices="LANG=C pactl list | grep -A2 'Source #' | grep 'Name: 
 alias pf='printf "file '\''%s'\''\\n" * > file.txt'
 alias cc='ffmpeg -f concat -i file.txt -c:v copy -b:v 15000k -af aresample=async=1:first_pts=0 -c:a aac -b:a 128k -fflags +genpts final.avi'
 
+. "$HOME/.cargo/env"
+
+
+scan() {
+    if [ -z "$1" ]; then
+        echo "Usage: scan_to_png <output_file_name>"
+        return 1
+    fi
+
+    local device_name="airscan:e0:HP DeskJet 2700 series [824580] (USB)"
+    local output_file="$1.png"
+
+    echo "Scanning and saving as PNG..."
+    scanimage --device-name="$device_name" --format=png > "$output_file"
+
+    if [ $? -eq 0 ]; then
+        echo "Scan saved as $output_file"
+    else
+        echo "An error occurred during scanning."
+    fi
+}

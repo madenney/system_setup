@@ -19,4 +19,4 @@ xrandr --output HDMI-0 --mode 3840x2160 --rate 120 --pos 3000x0 --rotate normal
 xrandr --output DP-1 --mode 1920x1080 --pos 1080x421 --rotate normal
 xrandr --output DP-3 --primary --mode 1920x1080 --pos 0x73 --rotate right
 
-echo "Display configuration reverted to three independent monitors."
+echo "Display configuration reverted to three independent monitors." 
