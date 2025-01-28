@@ -30,6 +30,8 @@ Scripts to set up and customize the Linux system:
 - **`shortcuts.sh`**: Installs custom keyboard shortcuts.
 - **`install_Ishiiruka_reqs.sh`**: Installs dependencies for a custom Dolphin emulator setup.
 - **`slp_setup.sh`**: Sets up Slippi for GameCube netplay.
+- **`custom_unlock.sh`**: A shorter unlock from sleep pw (read from custom_unlock.txt, which is gitignored)
+
 
 ### Audio Management
 Scripts for managing and toggling audio outputs:
