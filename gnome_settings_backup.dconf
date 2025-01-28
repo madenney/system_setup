@@ -1,0 +1,161 @@
+[apps/seahorse/listing]
+keyrings-selected=['gnupg://']
+
+[apps/seahorse/windows/key-manager]
+height=476
+width=600
+
+[apps/update-manager]
+first-run=false
+launch-count=40
+launch-time=int64 1737624862
+show-details=true
+window-height=928
+window-width=961
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1738539569
+
+[desktop/ibus/general]
+preload-engines=['xkb:us::eng']
+version='1.5.26'
+
+[org/gnome/control-center]
+last-panel='keyboard'
+
+[org/gnome/deja-dup]
+backend='google'
+prompt-check='2025-01-27T04:49:06.999868Z'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/input-sources]
+per-window=false
+sources=[('xkb', 'us')]
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+gtk-theme='Yaru-sage-dark'
+icon-theme='Yaru-sage'
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-tweaks', 'io-snapcraft-sessionagent', 'org-gnome-nautilus']
+
+[org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
+application-id='io.snapcraft.SessionAgent.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/gedit/preferences/editor]
+scheme='Yaru-dark'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>N'
+command='/home/matt/Projects/system_setup/activate_tv_mode.sh'
+name='TV Mode'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>B'
+command='/home/matt/Projects/system_setup/activate_mirror.sh'
+name='Mirror TV Screen'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Super>E'
+command='/home/matt/Tools/thunderbird/thunderbird'
+name='Open Email'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Super>V'
+command='/home/matt/Projects/system_setup/revert_displays.sh'
+name='Revert Displays'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Super>M'
+command='/home/matt/Files/melee/slippi.AppImage'
+name='Open Melee'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Super>T'
+command='gnome-terminal'
+name='Open Terminal'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+favorite-apps=['gnome-control-center.desktop', 'org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'code_code.desktop', 'spotify_spotify.desktop']
+had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='42.9'
+
+[org/gnome/shell/extensions/dash-to-dock]
+show-mounts=false
+show-mounts-network=false
+show-mounts-only-mounted=true
+show-trash=false
+
+[org/gnome/shell/extensions/ding]
+show-home=false
+
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+toggle-message-tray=@as []
+
+[org/gnome/software]
+check-timestamp=int64 1737953115
+update-notification-timestamp=int64 1737953117
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=180
+sort-column='modified'
+sort-directories-first=true
+sort-order='descending'
+type-format='category'
+window-position=(1367, 410)
+window-size=(1347, 910)
