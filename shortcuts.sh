@@ -12,6 +12,7 @@ declare -A SHORTCUTS=(
     ["Mirror TV Screen"]="/home/$USER/Projects/system_setup/activate_mirror.sh|<Super>B"
     ["Revert Displays"]="/home/$USER/Projects/system_setup/revert_displays.sh|<Super>V"
     ["TV Mode"]="/home/$USER/Projects/system_setup/activate_tv_mode.sh|<Super>N"
+    ["Toggle Audio Device"]="python3 /home/$USER/Projects/system_setup/switch_audio_device.py|<Super>A"
 )
 
 echo "Creating custom shortcuts..."
