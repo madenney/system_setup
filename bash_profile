@@ -26,6 +26,7 @@ alias vm='VBoxManage startvm "Windows 10"'
 alias srb='source ~/.bash_profile'
 alias pw='node ~/Projects/lib/vigenere.js ~/Projects/lib/t'
 alias ns="npm start"
+alias nd="npm run dev"
 alias pi="python3 index.py"
 alias cc='echo "ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.wav"'
 alias ct='echo ffmpeg -ss 00:01:00 -to 00:02:00 -i input.mp4 -c copy output.mp4'
